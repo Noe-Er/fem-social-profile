@@ -1,0 +1,120 @@
+/* Browser Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*Import font */
+  @font-face {
+    font-family: inter;
+    src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+  }
+  /*Custom Properties*/
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+    --text-base: 14px;
+    --font-normal:400;
+    --font-bold: 600;
+  }
+  
+  /* Body */
+  body {
+    font-family: inter, sans-serif;
+    font-size: var(--text-base);
+    font-weight: var(--font-normal);
+  }
+  main {
+    background-color: var(--Grey900);
+    width: 100%;
+    min-height: 100vh;
+  
+    /* Center the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    section {
+        background-color: var(--Grey800);
+        width: 384px;
+        border: 1px solid var(--Grey800);
+        border-radius: 18px;
+        padding: 15px 30px;
+        align-items: center;
+        
+  
+        img.header-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            
+        }
+
+        h1{
+            color: var(--White);
+            font-size: 24px;
+            font-weight: var(--font-bold);
+            margin-bottom: 15px;
+            margin-top: 15px;
+            justify-content: center;
+            display: flex;
+           
+        }
+
+        div.location{
+           color: var(--Green);
+           margin-bottom: 20px;
+           margin-top: 15px ;
+           justify-content: center;
+           display: flex;
+          
+        }
+
+        p.description{
+            color: var(--White);
+            margin-bottom: 20px;
+            justify-content: center;
+            display: flex;
+            
+        }
+
+        div.social-media{
+            
+            p{
+                margin-top: 15px;
+                margin-bottom: 20px;
+                border: 3px;
+                border-radius: 10px;
+                background: var(--Grey700);
+                color: var(--White);
+                padding: 12px 12px;
+                width: 100%;
+                display: flex;
+                height: auto;
+                font-size: 14px;
+                font-weight: var(--font-bold);
+                justify-content: center; 
+               
+            }
+        }
+    }
+}
+  /*color: var(--White);
+                font-size: 14px;
+                font-weight: var(--font-bold);
+                margin-bottom: 5px;
+                width: 80%;
+                
+                
+                flex: 50%;
+                padding: 20px;
+                justify-content: center; */
